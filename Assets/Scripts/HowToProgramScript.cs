@@ -17,8 +17,12 @@ public class HowToProgramScript : MonoBehaviour
 
     private void Start()
     {
+        int a = 6;
+        int b = 9;
+
+
         print("This is from PRINT");
-        Debug.Log("This is from DEBUG LOG");
+        Debug.Log($"{a} + {b} = {a + b}");
     }
 
 }
