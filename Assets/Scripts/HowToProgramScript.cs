@@ -20,9 +20,17 @@ public class HowToProgramScript : MonoBehaviour
         int a = 6;
         int b = 9;
 
-
-        print("This is from PRINT");
-        Debug.Log($"{a} + {b} = {a + b}");
+        lol();
+        LOL(5, 3);
     }
+    static void lol()
+    {
+        print("This is from PRINT");
+    }
+    static int LOL(int a, int b)
+    {
+        print($"A + B is {a+b}");
+    }
+
 
 }
