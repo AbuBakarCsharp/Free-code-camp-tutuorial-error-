@@ -29,7 +29,7 @@ public class HowToProgramScript : MonoBehaviour
     }
     static int LOL(int a, int b)
     {
-        print($"A + B is {a+b}");
+        return a + b;
     }
 
 
