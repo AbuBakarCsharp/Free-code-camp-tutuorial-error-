@@ -21,6 +21,8 @@ public class HowToProgramScript : MonoBehaviour
         int b = 9;
 
         StartCoroutine(blah());
+        StartCoroutine("blah");
+        StopCoroutine("blah");
 
         lol();
         LOL(5, 3);
@@ -31,6 +33,9 @@ public class HowToProgramScript : MonoBehaviour
         yield return new WaitForSeconds(9f);
 
         print("HAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA");
+        yield return new WaitForSeconds(7f);
+
+        print("HEHEHEH");
     }
 
     static void lol()
