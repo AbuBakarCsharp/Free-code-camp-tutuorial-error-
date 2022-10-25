@@ -26,6 +26,10 @@ public class HowToProgramScript : MonoBehaviour
 
         lol();
         LOL(5, 3);
+
+        //Class
+        Player hero = new Player(100,100,Steve);
+        Player hero = new Player(100,100,Steve);
     }
 
     IEnumerator blah()
