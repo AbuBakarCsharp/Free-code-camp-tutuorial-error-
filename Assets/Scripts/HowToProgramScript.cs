@@ -20,17 +20,30 @@ public class HowToProgramScript : MonoBehaviour
         int a = 6;
         int b = 9;
 
-        StartCoroutine(blah());
-        StartCoroutine("blah");
-        StopCoroutine("blah");
+        //StartCoroutine(blah());
+        //StartCoroutine("blah");
+        //StopCoroutine("blah");
 
         lol();
         LOL(5, 3);
 
         //Class
-        Player hero = new Player(100,100,Steve);
-        Player hero = new Player(100,100,Steve);
+        Player hero = new Player(100,100,"Steve");
+        hero.Attack();
+        hero.Healing();
+        hero.Info();
+        StartCoroutine(WaitForNextClass());
+
     }
+
+    IEnumerator WaitForNextClass() 
+    {
+        yield return new WaitForSeconds(4f);
+        Player dragon = new Player(500,500,"Ender Dragon");
+        dragon.Info();
+        dragon.Attack();
+    }
+
 
     IEnumerator blah()
     {
