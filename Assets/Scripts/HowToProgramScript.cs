@@ -15,25 +15,30 @@ public class HowToProgramScript : MonoBehaviour
 
     //bool IsDead = true;
 
+
+    //main
     private void Start()
     {
-        int a = 6;
-        int b = 9;
+        //int a = 6;
+        //int b = 9;
 
         //StartCoroutine(blah());
         //StartCoroutine("blah");
         //StopCoroutine("blah");
 
-        lol();
-        LOL(5, 3);
+        //lol();
+        //LOL(5, 3);
 
         //Class
         Player hero = new Player(100,100,"Steve");
-        hero.Attack();
-        hero.Healing();
-        hero.Info();
-        StartCoroutine(WaitForNextClass());
-
+        //hero.Attack();
+        //hero.Healing();
+        //hero.Info();
+        //StartCoroutine(WaitForNextClass());
+        hero.SetHealth(70);
+        print($"Health is {hero.GetHealth()}");
+        hero.Health = 60;
+        print($"Health is {hero.Health}");
     }
 
     IEnumerator WaitForNextClass() 
