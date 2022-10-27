@@ -30,15 +30,23 @@ public class HowToProgramScript : MonoBehaviour
         //LOL(5, 3);
 
         //Class
-        Player hero = new Player(100,100,"Steve");
-        //hero.Attack();
+        //Player hero = new Player(100,100,"Steve");
+        //hero.PleaseAttack();
         //hero.Healing();
         //hero.Info();
         //StartCoroutine(WaitForNextClass());
-        hero.SetHealth(70);
-        print($"Health is {hero.GetHealth()}");
-        hero.Health = 60;
-        print($"Health is {hero.Health}");
+
+        //hero.SetHealth(70);
+        //print($"Health is {hero.GetHealth()}");
+        //hero.Health = 60;
+        //print($"Health is {hero.Health}");
+
+        Steeve Alex = new Steeve();
+        Alex.SetName = Alex;
+        Alex.SetHealth = 50;
+        Alex.SetPower = 400;
+        Alex.Info();
+        //Alex.PleaseAttack();
     }
 
     IEnumerator WaitForNextClass() 
@@ -46,7 +54,7 @@ public class HowToProgramScript : MonoBehaviour
         yield return new WaitForSeconds(4f);
         Player dragon = new Player(500,500,"Ender Dragon");
         dragon.Info();
-        dragon.Attack();
+        dragon.PleaseAttack();
     }
 
 
